@@ -5,6 +5,7 @@ metadata:
   namespace: prod
 spec:
   releaseName: hello-arc-prod
+  forceUpgrade: true
   chart:
     git: https://github.com/likamrat/hello_arc.git
     path: charts/hello-arc
@@ -16,4 +17,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Azure Arc enabled Kubernetes GitOps Demo!
+      value: Azure Arc enabled Kubernetes GitOps Demo v2!
